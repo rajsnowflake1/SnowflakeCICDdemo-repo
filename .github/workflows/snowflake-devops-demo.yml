@@ -9,14 +9,14 @@ on:
       - 'migrations/**'
       
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch::
+ workflow_dispatch:
   
   jobs:
     deploy-snowflake-changes-job:
     runs-on:  ubuntu-latest
     
     steps:
-      # Checks-out repository under $GITHUB-WORKSPACE, so you job can access it
+      # Checks-out repository under $GITHUB-WORKSPACE, so your job can access it
       - name: Checkout  repository
         uses: actions/checkout@v2
         
